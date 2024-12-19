@@ -137,6 +137,7 @@ class AgentRunInput(BaseModel):
     agent_deployment: AgentDeployment
     environment_deployments: Optional[List[EnvironmentDeployment]] = None
     orchestrator_runs: List['OrchestratorRun'] = []
+    signature: str
     
 class OrchestratorRunInput(BaseModel):
     consumer_id: str
